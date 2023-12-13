@@ -1,0 +1,286 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /* font-family is used to customize the font */
+    /* for fonts from google fonts, copy and paste the corresponding CSS rules here */
+    font-family: 'Libre Franklin', sans-serif;
+} 
+
+#container {
+    width: 100%;
+    height: 100vh; /* 1vh=19.2px  ; 100vh = full screen height */
+    position: relative; /* positioned relative to its normal position */
+    /* background-color: aliceblue; */
+}
+
+#logo{
+    width: 120px;
+}
+
+.navbar{
+    /* used to display all the contents in the children tag (<img> & <ul>) side by side */
+    display: flex;
+    /* aligns the two tags on either side of the screen */
+    /* justify-content: center = aligns the items horizontally*/
+    justify-content: space-between;    
+    /* to align items vertically center */
+    align-items: center;
+    width: 85%;
+    margin-left: 100px;    
+}
+
+.listitem{
+    /* when applied to PARENT TAG, to dislay the contents of the CHILD TAG side by side /horizontally */
+    /* when its applied to a TAG, it respects both top and bottom margins and paddings */
+    display: inline-block;
+    /* this property removes any styling that list has */
+    list-style: none;
+    /* margin: top/bottom left/right */
+    margin: 10px 20px;
+}
+
+.links{
+    /* removes the underline styling of the links */
+    text-decoration: none; 
+    color: black;
+    /* the thickness of the font */
+    font-weight: bolder; 
+
+}
+/* :hover is a pseudo class used to changes the properties of the class when the hovers over it */
+.links:hover{
+    color: red;
+}
+.title{
+    margin-left:8%;
+    margin-top:13% ;
+}
+.title_h1{
+    font-size:50px;
+    margin-bottom:20px;
+}
+#lastname{
+    color: orange;
+}
+#download{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    margin: 30px 0px;
+    /* here, display: inline-block affects only the margins and padding of the anchor tag */
+    display: inline-block;
+    border-radius: 10px;
+}
+.images{
+    width: 45%;
+    height: 85%;
+    /*if position: absolute was not given here, imgaes_div would've aligned with respect the container_div */
+    position: absolute;
+    bottom: 0px;
+    right: 40px;
+}
+.imageGroup{
+    /* here, position: absolute overlaps the images over each other */
+    position: absolute;
+    height: 100%;
+    bottom: 0px; /* initial values (before hovering) */
+    left: 50%; /* initial values (before hovering) */
+    /* this is used to nullify the effect of initial values while viewing the page (to remove the left:50%) */
+    transform: translate(-50%);
+    transition: bottom 1s, left 2s;
+}
+.images:hover #shape{
+    /* final values for the transition of "shape" image (# beacuse id selector)*/
+    bottom: 70px;
+}
+.images:hover #girl{
+    /* final values for the transition of "girl" image (# beacuse id selector)*/
+    left:40%;
+}
+#about {
+    margin: 15% 8% 0 8% ;
+
+}
+
+.heading{
+    font-size: 20px;
+    text-align: center;
+
+}
+.he
+.heading h1{
+    font-size: 30px;
+    text-align: center;
+
+}
+.heading span{
+    color: green;
+    font-size:20px;
+    text-align: center;
+
+}
+.about_image img{
+
+    height: 80%;
+    width: 80%;
+
+
+}
+
+.about_content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* gap: 2rem; */
+    column-gap: 2rem;
+    margin-top: 2rem;
+}
+.information{
+    margin-top: 16px;
+}
+
+.about_para{
+   text-align: justify;
+    font-size: 18px;
+    font-weight: 580;
+}
+.info-box{
+    margin-bottom: .4rem;
+    align-items: center;
+    font-size: 12px;
+}
+.info-box span{
+    margin-left: 1rem;
+}
+
+
+#skills{
+    margin: 8% 8% 0 8%;
+}
+.skill_container{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    column-gap: 2rem;
+    margin-top: 2rem;
+
+}
+
+
+
+.skill_img{
+    padding: left 4rem;;
+    width: 50% ;
+    object-position: center ;
+}
+
+.progress_bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding: 1rem 0px;
+    position: relative;
+    
+}
+
+.progress_bar span{
+font-weight: 800;
+font-size: 1.2 rem;
+
+}
+
+
+.base_bar {
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    border-radius: .5rem;
+
+}
+.html_bar {
+    background-color: orange;
+    width: 95%;
+}
+.css_bar {
+    background-color: orange;
+    width: 88%;
+}
+.js_bar {
+    background-color: orange;
+    width: 89%;
+}
+.react_bar {
+    background-color: orange;
+    width: 85%;
+}
+
+.icon_set{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;  
+}
+
+.icon , .footer_arrow{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-left: 10px;
+    margin-right: 15px;
+
+}
+.icon:hover{
+    background-color: orange;
+    animation: shake 0.75s;
+}
+@keyframes shake {
+    10%{
+        transform: rotate(15deg);
+    } 
+    20%{
+        transform: rotate(-15deg);
+    } 
+    30%{
+        transform: rotate(15deg);
+    } 
+    40%{
+        transform: rotate(-15deg);
+    } 
+}   
+
+.icon i{
+    color: black;
+    font-size:2rem;
+
+
+}
+
+
+
+.footer_p{
+    text-align: center;
+    font-weight: 20px;
+    margin-top: 20px;
+
+
+}
+.footer_arrow{
+    background-color: orange;
+    float: right  ;
+    margin-bottom: 10px;  
+    margin-top: 2rem;
+
+
+}
+.footer_arrow:hover i{
+    color:white
+}
+html{
+    scroll-behavior: smooth;
+}

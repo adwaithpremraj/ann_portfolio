@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style20.css">
+    <!-- favicon (favorite icon) - to select an icon for the webpage-->
+    <link rel="icon" type="image/x-icon" href="https://png.pngtree.com/png-vector/20190307/ourmid/pngtree-vector-template-icon-png-image_779454.jpg">
+
+    <!-- google fonts (copy&paste) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap" rel="stylesheet">
+
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="container">
+
+        <!-- tag used to make the navigation bar -->
+        <nav class="navbar">
+            <img id="logo" src="./media/img1.jpeg" alt="logo">
+            <ul>
+                <!-- href="#id" links the anchor tag to that particular section of the given id -->
+                <!-- # is used as the section to be linked is given an id (id selector)-->
+
+                <li class="listitem"><a class="links" href="#home">HOME</a></li>
+                <li class="listitem"><a class="links" href="#about">ABOUT</a></li>
+                <li class="listitem"><a class="links" href="#skills">SKILL</a></li>
+                <li class="listitem"><a class="links" href="#contacts   ">CONTACT</a></li>
+            </ul>
+        
+
+        </nav>
+
+        <!-- HOME -->
+        <!-- tag used to create sections on the webpage -->
+        <section id="home">
+            <div class="title">
+                <h1 class="title_h1">I am Ana <span id="lastname">Steel</span> </h1>
+                <p>This is my official Portfolio website to describe all <br>
+                    Details and work experience in Web Development                 
+                </p>
+                <a id="download" href="./media/Resume.pdf" download="">DOWNLOAD CV</a>
+
+            </div>
+            <div class="images">                                
+                <img class="imageGroup" id="shape" src="./media/img3.png" alt="shape">
+                <img class="imageGroup" id="girl" src="./media/img2.png" alt="girl">
+               
+            </div>
+
+        </section>
+
+
+         <!-- ABOUT -->
+        <section id="about"> 
+            <div class="heading">
+                    <h1>About</h1>
+                    <span> Indroduction</span> 
+            </div>  
+
+            <div class="about_content">
+                <div class="about_image">
+                    <img src="./media/about.avif" alt="about">
+                </div>
+                <div class="about_details">
+                    <div class="about_para">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam eligendi ipsam, 
+                            voluptates soluta quis inventore quam hic sunt accusantium quae labore repellat est odit odio ducimus beatae dolorum aut ratione.
+                        </p>
+                    </div>
+                    <div class="information">
+                        <div class="info-box">
+                            <i class="fa-solid fa-user"></i>
+                            <span>Ana Steel</span>
+                        </div>
+                        <div class="info-box">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>9087348234</span>
+                        </div>
+                        <div class="info-box">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>anastell@gmail.vom</span>
+                        </div>
+                        <div class="info-box">
+                            <i class="fa-brands fa-github"></i>
+                            <span>anusteel</span>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+        </section>
+        
+         <!-- SKILL -->
+        
+            
+         <section id="skills">    
+            <div>
+                <div class="heading">
+                    <h1>Skills</h1>
+                    <span> My Skills</span>
+                </div>
+
+                <div class="skill_container">
+                    <div class="progress_container">
+
+                        <div class="progress_bar">
+                            <h4>HTML</h4>
+                            <span>95%</span>
+                            <div class="base_bar"></div>
+                            <div class="base_bar html_bar"></div>
+                        </div>
+                        <div class="progress_bar">
+
+                                <H4>CSS</H4>
+                                <span>88%</span>
+                                <div class="base_bar"></div>
+                                <div class="base_bar css_bar"></div>
+                        </div>
+                        <div class="progress_bar">
+                                <H4>JS</H4>
+                                <span>89%</span>
+                                <div class="base_bar"></div>
+                                <div class="base_bar js_bar"></div>
+                        </div>
+                        <div class="progress_bar">
+                                <H4>REACT</H4>
+                                <span>85%</span>
+                                <div class="base_bar"></div>
+                                <div class="base_bar react_bar"></div>
+                    </div>                    
+                </div>
+
+                
+                <div class="skill_img">
+                    <img src="./media/img4.jpeg" alt="">
+                </div>
+            </div>
+
+        </section>
+
+    <!-- CONTACT -->
+
+        <section id="contacts">
+            <div>
+                <div class="heading">
+                    <h1>Contacts</h1>
+                    <span> My Contacts</span>
+                </div>
+
+            </div>
+            <div class="icon_set">
+                <div class="icon">
+                    <a href="https://www.linkedin.com/in/adwaith-premraj-89b9b9245/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+                <div class="icon">
+                    <a href="https://github.com/adwaithpremraj" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+                <div class="icon">
+                    <a href="https://www.linkedin.com/in/adwaith-premraj-89b9b9245/" target="_blank">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </div>
+                <div class="icon">
+                    <a href="https://www.linkedin.com/in/adwaith-premraj-89b9b9245/" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+                <div class="icon">
+                    <a href="https://www.linkedin.com/in/adwaith-premraj-89b9b9245/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+                <div class="icon">
+                    <a href="https://www.linkedin.com/in/adwaith-premraj-89b9b9245/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>    
+        </section> 
+        
+
+        <footer class="footer hidden-print">
+            <p class="footer_p">&copy;
+                © My Protfolio Design 2023, All Rights Reserved ® Ana Steel
+            </p>
+            <div class="footer_arrow">
+                <a href="#container" >
+                    <i class="fa-solid fa-arrow-up fa-1x"></i>
+                </a>
+
+            </div>
+        </footer>
+        
+
+    </div>
+
+</body>
+     
+
+</html>
